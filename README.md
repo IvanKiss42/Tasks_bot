@@ -4,8 +4,11 @@
 > [!NOTE]
 > Бот настроен на работу с PostgreSQL, для использования бота, после клонирования репозитория, в корневой папке создайте файл config.py и заполните его по образцу config.example.py.
 
-Для активации бота воспользуйтесь командой:
+Для активации бота последовательно воспользуйтесь командами:
 ```bash
+python -m venv venv
+source venv/Scripts/activate
+pip install -r requirements.txt
 python manage.py Bot.py
 ```
 
